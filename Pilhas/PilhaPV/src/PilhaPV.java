@@ -50,7 +50,7 @@ public class PilhaPV {
             throw new PilhaVaziaExcecao("Pilha Vazia");
         }
         Object elemento = pilha[topoVermelho];
-        pilha[topoVermelho--] = null;
+        pilha[topoVermelho] = null;
         topoVermelho--;
         verificarReducao();
         return elemento;
