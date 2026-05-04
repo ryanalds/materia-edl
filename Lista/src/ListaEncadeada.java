@@ -1,6 +1,3 @@
-/**
- * Implementação de Lista usando lista duplamente encadeada
- */
 public class ListaEncadeada<E> implements Lista<E> {
     
     private NoDuplo<E> inicio;
@@ -156,10 +153,7 @@ public class ListaEncadeada<E> implements Lista<E> {
         
         tamanho--;
     }
-    
-    /**
-     * Classe interna que representa um nó da lista duplamente encadeada
-     */
+
     private static class NoDuplo<E> implements Posicao<E> {
         private E elemento;
         private NoDuplo<E> anterior;

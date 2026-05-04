@@ -114,7 +114,6 @@ public class ListaArray<E> implements Lista<E> {
     @Override
     public Posicao<E> insertFirst(E o) {
         verificarCapacidade();
-        // Desloca todos os elementos para a direita
         for (int i = tamanho; i > 0; i--) {
             elementos[i] = elementos[i - 1];
         }
@@ -149,10 +148,7 @@ public class ListaArray<E> implements Lista<E> {
             elementos = novoArray;
         }
     }
-    
-    /**
-     * Classe interna que representa uma posição na lista
-     */
+
     private static class NodoPosicao<E> implements Posicao<E> {
         private E elemento;
         private int indice;
